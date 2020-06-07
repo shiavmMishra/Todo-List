@@ -1,0 +1,149 @@
+body{
+    background-color:#7395AE;
+}
+#main{
+    text-align: center;
+    margin-left:25%;
+    border-radius: 5%;
+    background-color:#557A95;
+    width: 50%;
+    /* height: 100%; */
+}
+#heading{
+    margin: 0;
+    height: 100px;
+    background-color: #5D5C61;
+    border: 1px solid grey;
+}
+#heading h2{
+    margin-top: 35px;
+}
+#github-btn{
+    height: 30px;
+    margin-left: 85%;
+    margin-top: -60px;
+    border: 3px solid purple;
+}
+#todo-description{
+    width: 100%;
+    height: 10%;
+    border: none;
+    display: inline;
+    background-color: whitesmoke;
+}   
+select{
+    background-color: whitesmoke;
+    width: 45%;
+    height: 10%;
+}
+#todo-date{
+    margin: 0;
+    background-color: whitesmoke;
+    width: 45%;
+    height: 10%;
+}
+#btn-add{
+    height: 50px;;
+    margin-top: 20px;
+    border: none;
+    color: #e4e4e4;
+    background-color: #3e3c3c;
+}
+#btn-add:hover{
+    transform: scale(1.2);
+}
+#todo-list{
+    margin-right: 40px;
+    /* height: 50px; */
+    /* border: 1px solid cyan; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom:1px solid grey;
+}
+#show-description{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    /* border: 0.5px solid red; */
+}
+#checkbox{
+    border: none;
+}
+li input:checked + span{
+    text-decoration: line-through;
+}
+#show-category{
+    width: 100px;
+    height: 30px;
+    background-color: teal;
+    padding-top: 10px;
+    /* border: 0.5px solid green; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+#show-category1{
+    width: 100px;
+    height: 30px;
+    background-color: darkcyan;
+    padding-top: 10px;
+    /* border: 0.5px solid green; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+#delete-button{
+    width: 50px;
+    padding-top: 10px;  
+    /* border: 0.5px solid orange; */
+}
+#delete-button i{
+    color: darkred;
+}
+#delete-button:hover{
+    transform: scale(1.6);
+}
+#show-date{
+    font-size: .8rem;
+    margin-top:5px;
+    text-align: left;
+}
+/* #todo-list-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+#checkbox{
+    border: none;
+    margin-top: 25px;
+}
+li input:checked + p{
+    text-decoration: line-through;
+}
+#show-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+#show-category{
+    font-size: 20px;
+    margin-left:250px;
+}
+#show-date{
+    font-size: 15px;
+    margin-top:45px;
+    margin-left: -525px;
+}
+.delete-button{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.delete-button:hover{
+    transform: scale(1.6);
+}
+.delete-button i{
+    color: red;
+} */
