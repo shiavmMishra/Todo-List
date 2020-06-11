@@ -1,5 +1,6 @@
+//requiring the mongoose to access the databse
 const mongoose = require('mongoose');
-
+//Schema for the database
 const todoSchema = new mongoose.Schema({
 
     description: {
@@ -15,7 +16,6 @@ const todoSchema = new mongoose.Schema({
         required: true
     }
 })
-
+//Exporting the todo.js.
 const Todo = mongoose.model('Todo', todoSchema);
-
 module.exports = Todo;

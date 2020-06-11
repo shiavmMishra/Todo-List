@@ -1,14 +1,16 @@
+/* Providing css features to my todo app */
 body{
     background-color:#7395AE;
 }
+/* Giving center alignment to the app */
 #main{
     text-align: center;
     margin-left:25%;
     border-radius: 5%;
     background-color:#557A95;
     width: 50%;
-    /* height: 100%; */
 }
+/* Heading of the app and giving some general css features */
 #heading{
     margin: 0;
     height: 100px;
@@ -18,12 +20,14 @@ body{
 #heading h2{
     margin-top: 35px;
 }
+/* This is a button which redirect you to my github account  */
 #github-btn{
     height: 30px;
     margin-left: 85%;
     margin-top: -60px;
     border: 3px solid purple;
 }
+/* the input where we provide the description */
 #todo-description{
     width: 100%;
     height: 10%;
@@ -31,17 +35,20 @@ body{
     display: inline;
     background-color: whitesmoke;
 }   
+/* the category */
 select{
     background-color: whitesmoke;
     width: 45%;
     height: 10%;
 }
+/* the date */
 #todo-date{
     margin: 0;
     background-color: whitesmoke;
     width: 45%;
     height: 10%;
 }
+/* button to add the task in to the list */
 #btn-add{
     height: 50px;;
     margin-top: 20px;
@@ -52,10 +59,9 @@ select{
 #btn-add:hover{
     transform: scale(1.2);
 }
+/* Here we are retriving the data from the user and displaying it into our browser */
 #todo-list{
     margin-right: 40px;
-    /* height: 50px; */
-    /* border: 1px solid cyan; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,7 +74,6 @@ select{
     width: 50px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
-    /* border: 0.5px solid red; */
 }
 #checkbox{
     border: none;
@@ -81,7 +86,6 @@ li input:checked + span{
     height: 30px;
     background-color: teal;
     padding-top: 10px;
-    /* border: 0.5px solid green; */
     font-family: Arial, Helvetica, sans-serif;
 }
 #show-category1{
@@ -89,13 +93,11 @@ li input:checked + span{
     height: 30px;
     background-color: darkcyan;
     padding-top: 10px;
-    /* border: 0.5px solid green; */
     font-family: Arial, Helvetica, sans-serif;
 }
 #delete-button{
     width: 50px;
     padding-top: 10px;  
-    /* border: 0.5px solid orange; */
 }
 #delete-button i{
     color: darkred;
@@ -108,42 +110,13 @@ li input:checked + span{
     margin-top:5px;
     text-align: left;
 }
-/* #todo-list-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    flex-wrap: wrap;
+/* Media Queries */
+@media screen and (max-width:800px){
+    body{
+        width: 100%;
+    }
+    #github-btn {
+        display: none;
+    }
+
 }
-#checkbox{
-    border: none;
-    margin-top: 25px;
-}
-li input:checked + p{
-    text-decoration: line-through;
-}
-#show-description{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    flex-wrap: wrap;
-    font-size: 20px;
-}
-#show-category{
-    font-size: 20px;
-    margin-left:250px;
-}
-#show-date{
-    font-size: 15px;
-    margin-top:45px;
-    margin-left: -525px;
-}
-.delete-button{
-    margin-top: 20px;
-    margin-left: 100px;
-}
-.delete-button:hover{
-    transform: scale(1.6);
-}
-.delete-button i{
-    color: red;
-} */
